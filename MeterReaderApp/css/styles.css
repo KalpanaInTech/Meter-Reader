@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+     
+    height: 100vh;
+}
+
+.form-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #007bff;
+}
+
+.form-table {
+    width: 100%;
+    border-spacing: 10px;
+    text-align: center;
+}
+
+.form-table td {
+    padding: 5px;
+    text-align: left;
+}
+.form-table {
+    width: 100%; /* Set a larger table width */
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.form-table th, .form-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.form-table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+.form-table tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.form-table th {
+    background-color: #007bff;
+    color: white;
+}
+label {
+    display: block;
+}
+
+input, select, button {
+    width: 100%;
+    height: 25px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 25px;
+ 
+}
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 80%;
+    height: 40px;
+}
+
+#responseMessage {
+    margin-top: 10px;
+    text-align: center;
+}
