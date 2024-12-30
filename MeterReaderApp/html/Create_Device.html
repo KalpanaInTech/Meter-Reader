@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert Device Record</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Add New Device &nbsp; &nbsp;<a href="Home.html">Home</a><br></h1>
+        <form id="deviceForm">
+            <table class="form-table">
+                <tr>
+                    <td><label for="device_id">Device ID:</label></td>
+                    <td><input type="number" id="device_id" name="device_id" required></td>
+                </tr>
+                <tr>
+                    <td><label for="device_name">Device Name:</label></td>
+                    <td><input type="text" id="device_name" name="device_name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="device_type">Device Type:</label></td>
+                    <td><input type="text" id="device_type" name="device_type" required></td>
+                </tr>
+                <tr>
+                    <td><label for="device_barcode">Device Barcode:</label></td>
+                    <td><input type="text" id="device_barcode" name="device_barcode" required></td>
+                </tr>
+                <tr>
+                    <td><label for="location">Location:</label></td>
+                    <td><input type="text" id="location" name="location" required></td>
+                </tr>
+                <tr>
+                    <td><label for="installation_date">Installation Date:</label></td>
+                    <td><input type="date" id="installation_date" name="installation_date" required></td>
+                </tr>
+                <tr>
+                    <td><label for="status">Status:</label></td>
+                    <td>
+                        <select id="status" name="status" required>
+                            <option value="1">Active</option>
+                            <option value="0">Inactive</option>
+                            
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <div class="button-container">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+        <div id="responseMessage"></div>
+    </div>
+    <script src="../js/createDevice.js"></script>
+</body>
+</html>
