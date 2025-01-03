@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Device Details</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .form-container {
+             max-width: 100%;
+             overflow-x: auto;
+        }
+
+        .form-table {
+            width: 100%; /* Set a larger table width */
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+
+        .form-table th, .form-table td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .form-table tbody tr:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
+
+        .form-table tbody tr:nth-child(even) {
+            background-color: #ffffff;
+        }
+
+        .form-table th {
+            background-color: #007bff;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+         
+            
+        <div> 
+            <h1>Device Details &nbsp; &nbsp;<a href="Home.html">Home</a><br> </h1> 
+     
+        <table class="form-table">
+            <thead>
+                <tr>
+                    <th>Device ID</th>
+                    <th>Device Name</th>
+                    <th>Device Type</th>
+                    <th>Device Barcode</th>
+                    <th>Location</th>
+                    <th>Installation Date</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="deviceTableBody">
+                <!-- Dynamic rows will be inserted here -->
+            </tbody>
+        </table>
+ 
+    <script src="../js/viewDevices.js"></script>
+</body>
+</html>
