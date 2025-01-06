@@ -60,6 +60,12 @@ h1 {
     background-color: #007bff;
     color: white;
 }
+.success-message { 
+    color: green;
+}
+.error-message {
+    color: red;
+}
 label {
     display: block;
 }
