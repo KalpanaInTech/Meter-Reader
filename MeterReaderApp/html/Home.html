@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        /* Styles for button visibility */
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Welcome to <i>MeterReader+</i></h1>
+        <table> <tr> 
+            <td><p id="welcomeMessage"> </p> </td> 
+            <td>&nbsp; &nbsp; &nbsp;</td>
+            <td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="Login.html">Logout</a></td>
+        </tr></table>
+          
+       
+
+        <div class="button-container">
+            <button id="addDeviceButton" class="hidden" onclick="window.location.href = 'Create_Device.html'">Add Device</button>
+            <button id="viewDeviceButton" onclick="window.location.href = 'View_Device.html'">View Device Details</button>
+            <button id="deviceReadingButton" class="hidden" onclick="window.location.href = 'Device_Reading.html'">Device Reading</button>
+            <button id="viewReadingButton" onclick="window.location.href = 'View_Reading.html'">View Device Reading</button>
+            <button id="viewAlertsButton" onclick="window.location.href = 'View_Alerts.html'">View Alerts</button>
+            <button id="csvUploadButton" class="hidden" onclick="window.location.href = 'CSV_data_upload.html'">Upload record </button>
+
+        </div>
+    </div>
+    <script src="../js/home.js"></script>
+</body>
+</html>
