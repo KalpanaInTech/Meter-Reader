@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Alerts</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        /* Adjust table column widths */
+        #alertsTable {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        #alertsTable th, #alertsTable td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        #alertsTable th {
+            background-color: #007bff;
+            color: white;
+        }
+
+        #alertsTable th:nth-child(4), #alertsTable td:nth-child(4) {
+            width: 50%; /* Set the Message column to 50% of the table width */
+        }
+
+        #alertsTable th:nth-child(1),
+        #alertsTable td:nth-child(1),
+        #alertsTable th:nth-child(2),
+        #alertsTable td:nth-child(2),
+        #alertsTable th:nth-child(3),
+        #alertsTable td:nth-child(3),
+        #alertsTable th:nth-child(5),
+        #alertsTable td:nth-child(5),
+        #alertsTable th:nth-child(6),
+        #alertsTable td:nth-child(6),
+        #alertsTable th:nth-child(7),
+        #alertsTable td:nth-child(7) {
+            width: auto; /* Adjust other columns proportionally */
+        }
+
+        #alertsTable tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        #alertsTable tr:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Alerts &nbsp; &nbsp;<a href="Home.html">Home</a><br> </h1> 
+       
+        <table id="alertsTable" class="form-table">
+            <thead>
+                <tr>
+                    <th>Alert ID</th>
+                    <th>Device ID</th>
+                    <th>Alert Type</th>
+                    <th>Message</th>
+                    <th>Alert Reading</th>
+                    <th>Status</th>
+                    <th>Created At</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Alert rows will be dynamically populated here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="../js/viewAlerts.js"></script>
+</body>
+</html>

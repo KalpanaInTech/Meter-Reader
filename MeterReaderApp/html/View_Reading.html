@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device Reading Viewer</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div>
+        <h1>View Device Readings &nbsp; &nbsp;<a href="Home.html">Home</a><br> </h1>
+        <div class="dropdown-container">
+            <label for="deviceDropdown"> <h3>Select Device:</h3></label>
+            <select id="deviceDropdown">
+                <option value="">Loading devices...</option>
+            </select>
+        </div>
+        <br>
+        <table id="readingsTable" class="form-table">
+            <thead>
+                <tr>
+                    <th>Device ID</th>
+                    <th>Reading Value</th>
+                    <th>Timestamp</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dynamic rows will be appended here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="../js/viewReading.js"></script>
+</body>
+</html>

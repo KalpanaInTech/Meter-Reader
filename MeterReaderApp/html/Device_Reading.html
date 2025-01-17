@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device Selector</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div>
+        <h1>Device Reading &nbsp; &nbsp;<a href="Home.html">Home</a></h1>
+        
+        <!-- Dropdown Section -->
+        <div class="dropdown-container">
+            <label for="deviceDropdown">Select Device:</label>
+            <select id="deviceDropdown">
+                <option value="">Loading devices...</option>
+            </select>
+        </div>
+        <br>
+        <!-- Selected ID Display -->
+        <div class="selected-id" id="selectedDeviceId"></div>
+        <br>
+        <!-- Input Form -->
+        <form id="readingForm">
+            <label for="readingValue">Last Reading:</label>
+            <input type="number" id="lastreadingValue" readonly>
+            <br>          <br>   
+            <label for="readingValue">Enter Current Reading:</label>
+            <input type="number" id="readingValue" placeholder="Enter reading value" required min="1">
+            <br>          <br>   
+            <label for="readingTimestamp">Reading Timestamp:</label>
+            <input type="datetime-local" id="readingTimestamp" required>
+
+            <button type="submit">Submit Reading</button>
+        </form>
+        <br>
+        <!-- Feedback Messages -->
+        <div id="feedbackMessage"></div>
+    </div>
+
+    <script src="../js/createReading.js"></script>
+</body>
+</html>
