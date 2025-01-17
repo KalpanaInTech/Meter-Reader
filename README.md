@@ -1,6 +1,6 @@
 # Full-Stack Meter-Reader App
 
-Developing a full-stack web-based application for efficient and user-friendly utility meter data reading and processing. 
+Developed a full-stack web-based application for efficient and user-friendly utility meter data reading and processing. 
 Built with HTML, CSS, JavaScript, and powered by PocketBase as the backend and data-handling API.
 This full-stack project is designed to provide seamless interaction and accurate data handling.
 
@@ -10,9 +10,13 @@ This full-stack project is designed to provide seamless interaction and accurate
 
 - **User-Friendly Interface**: Intuitive design for easy navigation and interaction.
 - **Real-Time Data Processing**: Processes and displays meter readings instantly.
+- **User authentication**: Secures access with authentication mechanisms.
+- **Role based Access**:Manages user permissions based on roles.
+- **Efficient Device management**:Simplifies handling and monitoring of devices.
+- **Alerts and notifications**: Real time Alert generation
+- **CSV uploads for bulk operations**:Enables efficient handling of large datasets.
 - **PocketBase Integration**: Utilizes PocketBase for backend services and API management.
 
----
 
 ## 📂 Repository Structure
 
