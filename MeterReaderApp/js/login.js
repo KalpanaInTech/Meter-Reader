@@ -1,5 +1,5 @@
 // Base URL of your PocketHost instance
-const BASE_URL = "https://meterreaderce2.pockethost.io";
+const BASE_URL = "http://127.0.0.1:8090";
 
 // Function to handle user login
 async function handleLogin(event) {
@@ -52,8 +52,7 @@ async function handleLogin(event) {
         // Successful login
         feedbackMessage.textContent = "Login successful!";
         feedbackMessage.className = "success-message";
-
-        // Redirect to home page
+         // Redirect to home page
         setTimeout(() => {
             window.location.href = "Home.html";
         }, 1000);

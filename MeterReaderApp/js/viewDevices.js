@@ -2,7 +2,7 @@ window.onload = async function () {
     try {
         //https://meterreaderplus.pockethost.io/
         //https://meterreaderce2.pockethost.io
-        const response = await fetch('http://127.0.0.1:8090/api/collections/Device_Master/records', {
+        const response = await fetch('http://127.0.0.1:8090/api/collections/Device_Master/records?sort=-created', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',

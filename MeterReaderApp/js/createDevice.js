@@ -6,9 +6,35 @@ form.addEventListener('submit', async (event) => {
 
     const formData = new FormData(form);
     const data = Object.fromEntries(formData.entries());
+    const deviceIdInput = document.getElementById("device_id");
+    const deviceId = Number(deviceIdInput.value);
 
+    // Validate if Device ID is greater than 0
+    if (deviceId <= 0) {
+        event.preventDefault(); // Prevent form submission
+        alert("Device ID must be greater than 0.");
+        deviceIdInput.focus(); // Focus on the invalid input field
+    }
+    
     try {
-        const response = await fetch('https://meterreaderce2.pockethost.io/api/collections/Device_Master/records', {
+
+        // API call to check if the device ID already exists
+        const checkDeviceResponse = await fetch(`http://127.0.0.1:8090/api/collections/Device_Master/records?filter=device_id=${deviceId}`);
+        
+        if (!checkDeviceResponse.ok) {
+            throw new Error('Failed to check existing device ID.');
+        }
+
+        const checkDeviceResult = await checkDeviceResponse.json();
+
+        // If a record exists, show an error
+        if (checkDeviceResult.items && checkDeviceResult.items.length > 0) {
+            alert("Device ID already exists!");
+            deviceIdInput.focus(); // Focus on the invalid input field
+            return; // Stop further processing
+        }
+
+        const response = await fetch('http://127.0.0.1:8090/api/collections/Device_Master/records', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
