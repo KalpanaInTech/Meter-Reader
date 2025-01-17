@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV Uploader</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>CSV Uploader &nbsp; &nbsp;<a href="Home.html">Home</a></h1>
+
+        <!-- File Upload Section -->
+        <div>
+            <label for="csvFile">Upload CSV File:</label>
+            <input type="file" id="csvFile" accept=".csv" required>
+        </div>
+        <br>
+        <button id="uploadBtn">Upload and Process CSV</button>
+        <br><br>
+
+        <!-- Feedback Section -->
+        <div id="feedbackMessage" class="responseMessage"></div>
+    </div>
+<!-- 
+    <script src="../js/csvUpload_ele.js"></script>-->
+    <script src="../js/csvUpload_data.js"></script>
+</body>
+</html>
